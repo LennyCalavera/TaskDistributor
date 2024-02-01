@@ -17,12 +17,8 @@ RUN pecl install xdebug \
               xdebug.client_host=host.docker.internal\n \
               xdebug.client_port=9003\n" >> "$PHP_INI_DIR/php.ini"
 
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
-
 RUN a2enmod rewrite
 RUN service apache2 restart
-
-USER www-data
 
 COPY entrypoint.sh ./entrypoint.sh
 

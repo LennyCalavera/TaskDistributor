@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-#cd /var/www/html
+cd /var/www/html
 echo "configuration started"
-echo "composer install"
-echo $(composer install)
 echo "php artisan key:generate"
 echo $(php artisan key:generate)
 echo "php artisan migrate"
