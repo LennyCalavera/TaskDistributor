@@ -8,12 +8,3 @@ Repository configured to run via Docker, use command "docker-compose up --build 
 Repository also contains Postman project configs for testing:
 - TaskDistibutor.postman_collection.json
 - TaskDistributor.postman_environment.json
-
-Routing:
-- /api/auth/login
-- /api/auth/register
-- /api/auth/logout
-- /api/auth/user
-- /api/task/get
-- /api/task/solve
-- /api/task/skip
